@@ -9,7 +9,8 @@ import java.sql.Statement;
 public class MainApp {
     public static void main(String[] args) {
         // Step 1: Open a connection
-        try (Connection conn = DatabaseConnection.connect()) {
+        String url = "jdbc:sqlite:C:/WorkSpace/03_CODING/SQL/DATABASES/learning.db";
+        try (Connection conn = DatabaseConnection.connect(url)) {
             System.out.println("Connected to SQLite successfully!");
 
             // Step 2: Create a statement
