@@ -9,7 +9,7 @@ public class StudentDAO {
     public static void main(String[] args) {
         String url = "jdbc:sqlite:C:/WorkSpace/03_CODING/SQL/DATABASES/learning.db";
 
-        try (Connection conn = DriverManager.getConnection(url);
+        try (Connection conn = DatabaseConnection.connect(url);
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery("SELECT * FROM students  ");) {
 
