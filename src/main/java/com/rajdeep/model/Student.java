@@ -15,7 +15,7 @@ public class Student {
     }
 
     // Getters
-    public int getStudentID() { return studentID; }
+    public int getStudentId() {return studentID;}
     public String getName() { return name; }
     public int getAge() { return age; }
     public String getMajor() { return major; }
@@ -35,6 +35,10 @@ public class Student {
                 ", age=" + age +
                 ", major='" + major + '\'' +
                 '}';
+    }
+
+    public int getStudentID() {
+        return studentID;
     }
 }
 
