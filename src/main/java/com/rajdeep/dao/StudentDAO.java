@@ -1,9 +1,12 @@
 package com.rajdeep.dao;
 import com.rajdeep.db.DatabaseConnection;
+import org.springframework.stereotype.Repository;
 import com.rajdeep.model.Student;
 import java.sql.PreparedStatement;
 import java.sql.*;
 import java.util.*;
+
+@Repository
 public class StudentDAO {
    public String url = "jdbc:sqlite:C:/WorkSpace/03_CODING/SQL/DATABASES/learning.db";
 
